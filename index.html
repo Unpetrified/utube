@@ -5,17 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <style type="text/css" media="all">
+    
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      input {
+        width: 80%;
+        margin-bottom: .5em;
+        border-radius: 0
+      }
+      
+      input:last-child {
+        width: 40%;
+        background: rgba(30,136,229,1.0);
+      }
+      
+    </style>
 </head>
 
 <body>
   <form id="form">
     <input type="text" name="original" id="old" />
-    <input type="submit" value="Generate Link" />
+    <input type="submit" value="Generate and copy Link" />
   </form>
-  <p id="txt">
-    New link
-  </p>
-  <button id="btn">Copy</button>
 <script src="script.js">
 </script>
 </body>
